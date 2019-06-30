@@ -9,7 +9,7 @@ Features
 
 * Uses `org.hid4java.HidDevice` instead of `com.codeminders.hidapi`
 * Includes effects like cross-fade and strobe
-* Has support for uploading a color pattern when using [Eric Draken's firmware](https://github.com/ericdraken/digispark-firmware-attiny85) fork
+* Has support for uploading a color pattern when using the [color-patten firmware](https://github.com/ericdraken/digispark-firmware-attiny85) fork
 * Has try-with-resources support to close the USB properly
 
 Examples
@@ -22,7 +22,7 @@ Images
 
 Here is a device with the [color-pattern-buffer](https://github.com/ericdraken/digispark-firmware-attiny85) firmware with which to use this Java API.
 
-![Digispark USB with custom soldered ADA106 LED](/pictures/attiny85-front.jpg)
+![Digispark USB with custom soldered APA106 LED](/pictures/attiny85-front.jpg)
 ![Digispark parts placement](/pictures/attiny85-back.jpg)
 
 Acknowledgements
