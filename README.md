@@ -1,4 +1,4 @@
-BlinkStick for Java with Color Pattern Buffer
+BlinkStick Java API with Color Pattern Buffer Support
 ====
 
 A Java library to control Digistump ATTiny85-based [BlinkStick](http://www.blinkstick.com) devices via USB to
