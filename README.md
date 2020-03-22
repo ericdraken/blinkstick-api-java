@@ -25,6 +25,24 @@ Here is a device with the [color-pattern-buffer](https://github.com/ericdraken/d
 ![Digispark USB with custom soldered APA106 LED](/pictures/attiny85-front.jpg)
 ![Digispark parts placement](/pictures/attiny85-back.jpg)
 
+Running in Docker
+==========
+
+This is helpful:
+
+```shell script
+# Install libudev and libusb-1.0
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    libudev-dev libusb-1.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Link libudev.so.1 to libudev.so.0
+RUN ln -sf $(find /lib -name libudev.so) $(find /lib -name libudev.so).0
+```
+
+Run `docker run --device=/dev/bus ...` to mount the USB devices.
+
 Acknowledgements
 ========
 
